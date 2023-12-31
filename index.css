@@ -1,0 +1,106 @@
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #7D3F98;
+  }
+
+  .container {
+  color: white;
+  min-height: 100vh; /* Use viewport height for full screen height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 240px;
+  position: relative;
+}
+
+.logo {
+  position: absolute; /* Make the logo's position absolute */
+  top: -0.5%; /* Adjust as necessary to position the logo */
+  left: 50%; /* Center the logo horizontally within the container */
+  transform: translateX(-49%); /* Adjust horizontal position to truly center */
+  width: 1000px;
+  height: 680px;
+  z-index: 10; /* Ensure the logo is above other elements */
+}
+
+
+.phone-img {
+  max-width: 30%; /* Make it responsive */
+  max-height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+
+.features {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+  left: 0; /* Align the container to the left */
+  right: 0; /* Align the container to the right */
+  display: flex;
+  justify-content: space-between; /* This will place the children at the far ends */
+  align-items: center;
+  z-index: 5;
+  padding:  10%; /* Add padding to push the feature items away from the edges */
+}
+
+.feature-item, .feature-item1 {
+  /* Set a max-width if necessary to prevent the feature items from getting too large */
+  max-width: 30%; /* Adjust this value as needed */
+  flex: 1; /* This will allow the feature items to grow and take up available space */
+}
+
+.feature-img {
+  width: 100%; /* Full width of the parent container */
+  height: auto;
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 100; /* Ensure navbar is above all other content */
+  }
+
+
+  .navbar-logo {
+    /* Assuming you have multiple logos/icons on the left */
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-logo img {
+    margin-right: 40px; 
+    height: 100px;
+    width: 110px;
+  }
+
+ .bx{
+   margin-right: 20px;
+   font-size: 40px;
+ }
+
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    padding-right: 40px; 
+  }
+
+  .navbar-links a {
+  text-decoration: none;
+  color: white; /* Adjust the color as needed */
+  font-weight: bold;
+  margin-left: 20px; /* Space between links */
+  display: flex; /* This will help align the icons with the text properly */
+  align-items: center; /* Align icons and text vertically */
+}
+
